@@ -14,13 +14,14 @@
 
 get_header();
 $show_on_front = get_option('show_on_front');
+
 if ( $show_on_front == 'posts' ):
 
 	$img = get_custom_header();
 	$img = $img->url;
 
 	if ( ! empty( $img ) ): ?>
-		<div class="newsmag-custom-header" style="background-image:url(<?php echo esc_url_raw( $img ) ?>)">
+		<!-- <div class="newsmag-custom-header" style="background-image:url(<?php echo esc_url_raw( $img ) ?>)">
 			<div class="container">
 				<div class="row">
 					<div class="col-xs-12">
@@ -28,8 +29,13 @@ if ( $show_on_front == 'posts' ):
 					</div>
 				</div>
 			</div>
-		</div>
+		</div> -->
 	<?php endif; ?>
+
+	<?php
+		echo do_shortcode('[smartslider3 slider=2]');
+	?>
+
 	<div class="container">
 		<div class="row">
 			<?php
@@ -74,7 +80,6 @@ else:
 			?>
 		</div>
 		<?php } ?>
-
 	<div class="container">
 		<div class="row">
 			<?php if ( is_active_sidebar( 'content-area' ) ) { ?>

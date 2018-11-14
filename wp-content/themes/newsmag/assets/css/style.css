@@ -3703,3 +3703,9 @@ p.indentback{
     left: 0;
     border-right: 5px solid #333;
 }*/
+
+@media screen and (max-width: 500px) {
+   /* 表示領域が320px以下の場合に適用するスタイル */
+   .spFloatRight { float:right; }
+   #postHeader { position: unset;}
+}

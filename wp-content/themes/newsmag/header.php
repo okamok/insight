@@ -22,7 +22,6 @@
 
 <body <?php body_class(); ?>>
 <div id="page" class="site">
-
 	<?php get_template_part( 'template-parts/social' ); ?>
 
 	<header id="masthead" class="site-header" role="banner">
@@ -70,13 +69,13 @@
 		     role="navigation">
 			<div class="container">
 				<div class="row">
-					<div class="<?php echo $enable_search ? 'col-md-9' : 'col-md-12' ?>">
+					<div class="<?php echo $enable_search ? 'col-md-9' : 'col-md-12' ?> spFloatRight">
 						<?php if ( $enable_sticky && ! empty( $image[0] ) ): ?>
 							<div class="stick-menu-logo">
 								<img src="<?php echo esc_url( $image[0] ); ?>"/>
 							</div>
 						<?php endif; ?>
-						<button class="menu-toggle" aria-controls="primary-menu"
+						<button class="menu-toggle spFloatRight" aria-controls="primary-menu"
 						        aria-expanded="false"><span class="fa fa-bars"></span></button>
 						<?php wp_nav_menu( array(
 							                   'theme_location' => 'primary',
@@ -86,7 +85,7 @@
 					</div>
 
 					<?php if ( $enable_search ): ?>
-						<div class="col-md-3">
+						<div class="col-md-3 spFloatRight">
 							<div class="top-header-icons pull-right">
 								<!-- Search Form -->
 								<form role="search" method="get" id="searchform_topbar"

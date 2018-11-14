@@ -30,7 +30,7 @@ if ( ! empty( $img ) ): ?>
 <?php endif; ?>
 
 <?php
-echo do_shortcode('[smartslider3 slider=2]');
+	echo do_shortcode('[smartslider3 slider=2]');
 ?>
 
 	<div class="container" style="margin-top:30px">

@@ -27,7 +27,7 @@ $title = get_the_title( get_the_ID() );
 	<div
 		class="newsmag-custom-header <?php echo ( is_single() && ! $image_in_content ) ? 'newsmag-custom-header-single-post' : '' ?>"
 		style="background-image:url(<?php echo esc_url_raw( $img ) ?>)">
-		<div class="container">
+		<div id="postHeader" class="container">
 			<div class="row">
 				<div class="col-xs-12">
 					<h2><?php echo esc_html( $title ) ?></h2>

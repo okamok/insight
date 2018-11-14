@@ -82,8 +82,24 @@ class ssba_widget extends WP_Widget {
 
 }
 
+// add_action ('widgets_init', create_function ('', 'return register_widget("oa_social_login_widget");'));
+//
+// function oa_social_login_init_widget ()
+// {
+//     return register_widget('oa_social_login_widget');
+// }
+// add_action ('widgets_init', 'oa_social_login_init_widget');
+
+
 // add ssba to available widgets
 add_action( 'widgets_init', create_function( '', 'register_widget( "ssba_widget" );' ) );
+
+// function ssba_widget_init ()
+// {
+//     return register_widget('ssba_widget');
+// }
+// add_action ('widgets_init', 'ssba_widget_init');
+
 
 function mywidget_init() {
 
