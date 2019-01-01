@@ -3666,7 +3666,7 @@ p.indentback{
 
 
 .postTitleSmall {
-  font-size: 1.5em;
+  font-size: 1.4em;
   margin-top: 1.5em;
   margin-bottom: 0.5em;
   padding-bottom: -1em;
@@ -3709,6 +3709,15 @@ p.indentback{
 .pInsight{
   font-size: 16px;
   line-height: 30px;
+}
+
+.pInsight p{
+  font-size: 16px;
+  line-height: 30px;
+}
+
+.pInsight a{
+  color: blue;
 }
 
 @media screen and (max-width: 500px) {
