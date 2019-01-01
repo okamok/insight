@@ -116,7 +116,7 @@ h3 {
 
 h4 {
   font-family: 'Poppins';
-  font-weight: 700;
+  font-weight: 500;
   font-size: 23px;
   line-height: 28px; }
 
@@ -3655,10 +3655,10 @@ p.indentback{
 .postTitle {
   /*margin: 0 0 1.5em;*/
   /*padding: 0.8em;*/
-  padding: 0.1em 0 0.1em 0.8em;
+  padding: 0.3em 0 0.3em 0.4em;
   border-left: 7px solid #B92A2C;
   border-bottom: 1px dashed #B92A2C;
-  font-size: 1.143em;
+  font-size: 1.7em;
   font-weight: bold;
 }
 
@@ -3666,13 +3666,15 @@ p.indentback{
 
 
 .postTitleSmall {
-  font-size: 1em;
+  font-size: 1.5em;
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
   padding-bottom: -1em;
 	border-bottom: 3px double #ccc;
       /*position: relative;
     color: #fff;
     background: #B92A2C;
-    font-size: 1.143em;
+    font-size: 1.5em;
     font-weight: bold;
     margin: 0 -1.8em 1.5em -1.8em;
     padding: 0.8em;
@@ -3704,8 +3706,14 @@ p.indentback{
     border-right: 5px solid #333;
 }*/
 
+.pInsight{
+  font-size: 16px;
+  line-height: 30px;
+}
+
 @media screen and (max-width: 500px) {
    /* 表示領域が320px以下の場合に適用するスタイル */
    .spFloatRight { float:right; }
    #postHeader { position: unset;}
+
 }
