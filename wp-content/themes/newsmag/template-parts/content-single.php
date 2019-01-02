@@ -18,7 +18,8 @@ $author              = get_theme_mod( 'newsmag_enable_author_box', true );
 			<div class="newsmag-image">
 				<?php
 				if ( has_post_thumbnail() ) {
-					the_post_thumbnail( 'newsmag-recent-post-big' );
+					//the_post_thumbnail( 'newsmag-recent-post-big' ); 
+					the_post_thumbnail();
 				}
 				?>
 			</div>
